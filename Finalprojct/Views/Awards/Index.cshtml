@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Finalprojct.DAL.Award>
+
+@{
+    ViewBag.Title = "Awards";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AwardName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AwardDesc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AwardName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AwardDesc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AwardID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AwardID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AwardID })
+        </td>
+    </tr>
+}
+
+</table>

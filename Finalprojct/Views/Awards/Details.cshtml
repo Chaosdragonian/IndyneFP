@@ -1,0 +1,42 @@
+﻿@model Finalprojct.DAL.Award
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Award</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AwardName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AwardName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AwardDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AwardDesc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AwardID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
