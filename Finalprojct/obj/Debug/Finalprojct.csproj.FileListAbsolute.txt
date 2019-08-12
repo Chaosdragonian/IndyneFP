@@ -85,3 +85,4 @@ C:\Users\Admin Spare 10\Documents\Finalprojct\Finalprojct\obj\Debug\Finalprojct.
 C:\Users\Admin Spare 10\Documents\Finalprojct\Finalprojct\obj\Debug\Finalprojct.csproj.CopyComplete
 C:\Users\Admin Spare 10\Documents\Finalprojct\Finalprojct\obj\Debug\Finalprojct.dll
 C:\Users\Admin Spare 10\Documents\Finalprojct\Finalprojct\obj\Debug\Finalprojct.pdb
+C:\Users\Admin Spare 10\Documents\Finalprojct\Finalprojct\obj\Debug\Finalprojct.csprojAssemblyReference.cache
